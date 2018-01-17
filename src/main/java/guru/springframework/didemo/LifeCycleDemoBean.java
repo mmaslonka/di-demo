@@ -59,4 +59,18 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
     public void afterInit() {
         System.out.println("## After Init - Called by Bean Post Processor");
     }
+
+    
+    /*
+        ## I'm in the LifeCycleBean Constructor
+        ## My Bean name is lifeCycleDemoBean
+        ## The Factory has been set
+        ## Application context has been set
+        ## Before Init - Called by Bean Post Processor
+        ## The Post Construct annotated method has been called
+        ## The LifecycleBean has its properties set
+        ## After Init - Called by Bean Post Processor
+        ## The Predestroy annotated method has been called
+        ## The LifecycleBean has been terminated
+    */
 }
